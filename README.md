@@ -1,8 +1,8 @@
-# kwin-minimize-primary
+# kwin-minimize-active
 
-Toggles minimize/restore of all windows on the **primary monitor only** in KDE Plasma 6 on Wayland.
+Toggles minimize/restore of all windows on the **active monitor only** in KDE Plasma 6 on Wayland.
 
-Think of it as `Meta+D` (show desktop) but scoped to one screen — useful on multi-monitor setups where you want to clear your main screen without touching your secondary displays.
+Think of it as `Meta+D` (show desktop) but scoped to one screen — useful on multi-monitor setups where you want to clear your active screen without touching your other displays.
 
 ---
 
@@ -31,20 +31,20 @@ sudo pacman -S kscreen qt6-tools
 ## Install
 
 ```bash
-git clone https://github.com/EpocKis/kwin-minimize-primary
-cd kwin-minimize-primary
+git clone https://github.com/EpocKis/kwin-minimize-active
+cd kwin-minimize-active
 chmod +x install.sh
 ./install.sh
 ```
 
 Or manually:
 ```bash
-cp minimize-primary.sh ~/.local/bin/
-chmod +x ~/.local/bin/minimize-primary.sh
+cp minimize-active.sh ~/.local/bin/
+chmod +x ~/.local/bin/minimize-active.sh
 ```
 
 Then in **System Settings → Shortcuts → Add New → Command or Script**:
-- Command: `/home/YOUR_USERNAME/.local/bin/minimize-primary.sh`
+- Command: `/home/YOUR_USERNAME/.local/bin/minimize-active.sh`
 - Shortcut: `Meta+Shift+D`
 
 ---
